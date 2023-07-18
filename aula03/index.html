@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Aula 03</title>
+  </head>
+  <body>
+    <main>
+      <div id="box">
+        <div id="logo">
+            <img src="./logo.png" alt="Logotipo de um cachorro vira lata">
+            <h1>viralata</h1>
+        </div>
+        <h2 id="slogan">Cadastre agora seu formulário de adoção e receba em casa seu doguinho caramelo! Lembrando que é necessário ter mais de 18 anos</h1>
+        <img
+          src="./carameloRenderizado.png"
+          alt="filhote de cachorro caramelo"
+        />
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <input type="text" placeholder="Nome completo" />
+                <input type="tel" placeholder="(32) 998252432" />
+                <input type="date" max="2005-07-18">
+                <input type="number" placeholder="idade" min="18" />
+                <input type="email" placeholder="email" />
+                <input type="password" placeholder="senha" />
+            </fieldset>
+            <fieldset>
+                <legend>Preferências</legend>
+                <label for="qualLocal">De onde gostaria de adotar ele?</label>
+                <select name="qualLocal" id="qualLocal">
+                    <option disabled selected>Seleciona uma opção</option>
+                    <option value="local">De um abrigo local</option>
+                    <option value="resgatados">Cães resgatados</option>
+                </select>
+                <label for="">Em quais fases da vida você aceita um doguinho?</label>
+                <div class="flexHorizontal">
+                  <div class="flexAlign">
+                    <input id="filhote" type="checkbox" value="filhote">
+                    <label for="filhote">Filhote</label>
+                  </div>
+                  <div class="flexAlign">
+                    <input id="adulto" type="checkbox" value="adulto"> 
+                    <label for="adulto">Adulto</label>
+                  </div>
+                  <div class="flexAlign">
+                    <input id="idoso" type="checkbox" value="idoso"> 
+                    <label for="idoso">Idoso</label>
+                  </div>
+                </div>
+                
+            </fieldset>
+
+          <div>
+            <label class="read">Você leu e concorda com os termos?</label>
+            <div class="flexHorizontal">
+              <div class="flexAlign">
+                <input name="termos" id="sim" type="radio" required/>
+                <label for="sim">Sim</label>
+              </div>
+              <div class="flexAlign">
+                <input name="termos" id="nao" type="radio" />
+                <label for="nao">Não</label>
+              </div>
+          </div>
+          </div>
+          <div id="divButton">
+            <button>Ta, agora me dá meu doguinho</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
