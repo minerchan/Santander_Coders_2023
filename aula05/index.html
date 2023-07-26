@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cardápio Digital</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header>
-      <div id="titulo">
-        <h1>Cardápio/Catálogo Digital</h1>
-        <h3>Confira nossos produtos deliciosos!</h3>
-      </div>
-      <nav>
-        <ul>
-          <li>Catálogo</li>
-          <li>Tabela de Preços</li>
-          <li>Cadastro</li>
-        </ul>
-      </nav>
-    </header>
-    <main id="flexProdutos">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardápio Digital</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <div id="titulo">
+      <h1>Cardápio/Catálogo Digital</h1>
+      <h3>Confira nossos produtos deliciosos!</h3>
+    </div>
+    <nav>
+      <ul>
+        <li>Catálogo</li>
+        <li>Tabela de Preços</li>
+        <li>Cadastro</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="flexProdutos">
       <h2>Cardápio/Catálogo</h2>
       <div class="gridItem">
         <img src="./pizza.jpg" alt="Imagem de uma pizza" />
@@ -42,6 +45,46 @@
         <h2>Produto 4</h2>
         <p>Descrição do produto 4</p>
       </div>
-    </main>
-  </body>
+    </section>
+    <section>
+      <h2 class="marginB">Tabela de Preços</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Produto 1</td>
+            <td>R$ 10,00</td>
+          </tr>
+          <tr>
+            <td>Produto 2</td>
+            <td>R$ 15,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2 class="marginB">Formulário de cadastro</h2>
+      <form>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text">
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <label for="telefone">Telefone</label>
+        <input id="telefone" type="tel">
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <button>Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>Todos os direitos reservados a Samuel Cavalcanti Rodrigues</p>
+  </footer>
+
+</body>
+
 </html>
